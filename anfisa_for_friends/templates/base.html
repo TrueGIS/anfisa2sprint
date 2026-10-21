@@ -17,7 +17,8 @@
       {% block content %}{% endblock %}
       </div>
     </main>
-    {% include "includes/footer.html" %}   
+    {% include "includes/footer.html" %}
+    {% block debug %}{% endblock %}    
   </body>
   <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
