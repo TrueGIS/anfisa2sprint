@@ -1,5 +1,7 @@
 from pathlib import Path
-
+import mimetypes
+# Принудительно говорим Django, что .js — это JavaScript
+mimetypes.add_type('application/javascript', '.js', True)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
